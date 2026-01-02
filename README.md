@@ -1,6 +1,6 @@
 # Instagram Unfollowers
 
-A minimal dark-mode web app that compares your Instagram following vs followers from your exported data and lists users who don’t follow you back, with direct links to their profiles. All processing happens locally in your browser.
+A minimal web app that compares your Instagram following vs followers from your exported data and lists users who don’t follow you back, with direct links to their profiles. All processing happens locally in your browser.
 
 ## How to export your Instagram data (Followers and Following only)
 

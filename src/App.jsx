@@ -250,9 +250,17 @@ const App = () => {
                 <div className="p-2 rounded-lg bg-indigo-500/10 ring-1 ring-indigo-500/20">
                   <HelpCircle className="w-5 h-5 text-indigo-400" />
                 </div>
-                <h2 className="text-lg font-semibold text-white">How to get your Instagram ZIP</h2>
+                <h2 className="text-lg font-semibold text-white">How to get and use your Instagram ZIP</h2>
               </div>
               <div className="space-y-4 text-slate-300">
+                <div className="bg-slate-950/50 border border-slate-800 rounded-xl p-4">
+                  <p className="text-white font-semibold mb-2">Important</p>
+                  <ul className="list-disc list-inside space-y-1 text-slate-200">
+                    <li>Upload the file as a ZIP. Do not unzip it.</li>
+                    <li>If your browser auto-unzips, re-zip the folder before uploading.</li>
+                    <li>The tool reads followers_1.json and following.json inside the ZIP.</li>
+                  </ul>
+                </div>
                 <div>
                   <p className="text-slate-400 text-sm mb-2">On web</p>
                   <ol className="list-decimal list-inside space-y-1 text-slate-200">
@@ -272,6 +280,20 @@ const App = () => {
                     <li>Select only “Followers and following”, format JSON.</li>
                     <li>Create file, wait for notification, download the ZIP.</li>
                   </ol>
+                </div>
+                <div className="bg-slate-950/50 border border-slate-800 rounded-xl p-4">
+                  <p className="text-white font-semibold mb-2">Using this website</p>
+                  <ol className="list-decimal list-inside space-y-1 text-slate-200">
+                    <li>Click the upload area or drag your ZIP onto it.</li>
+                    <li>Wait for processing; everything happens locally in your browser.</li>
+                    <li>Click usernames to open their Instagram profile.</li>
+                  </ol>
+                </div>
+                <div className="bg-slate-950/50 border border-slate-800 rounded-xl p-4">
+                  <p className="text-white font-semibold mb-2">Run locally (optional)</p>
+                  <div className="bg-slate-900 rounded-lg p-3 text-slate-200 font-mono text-sm">
+                    <pre>{`npm install\nnpm run dev`}</pre>
+                  </div>
                 </div>
               </div>
             </div>
