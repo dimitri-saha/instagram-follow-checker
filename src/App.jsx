@@ -1,6 +1,6 @@
 import React, { useState, useCallback } from 'react';
 import JSZip from 'jszip';
-import { Upload, UserX, AlertCircle, FileArchive, CheckCircle2, Instagram } from 'lucide-react';
+import { Upload, UserX, AlertCircle, FileArchive, CheckCircle2, Instagram, HelpCircle } from 'lucide-react';
 import { clsx } from 'clsx';
 import { twMerge } from 'tailwind-merge';
 
@@ -244,6 +244,37 @@ const App = () => {
                 <p>{error}</p>
               </div>
             )}
+
+            <div className="mt-8 bg-slate-900/40 border border-slate-800 rounded-2xl p-6">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="p-2 rounded-lg bg-indigo-500/10 ring-1 ring-indigo-500/20">
+                  <HelpCircle className="w-5 h-5 text-indigo-400" />
+                </div>
+                <h2 className="text-lg font-semibold text-white">How to get your Instagram ZIP</h2>
+              </div>
+              <div className="space-y-4 text-slate-300">
+                <div>
+                  <p className="text-slate-400 text-sm mb-2">On web</p>
+                  <ol className="list-decimal list-inside space-y-1 text-slate-200">
+                    <li>Open <a className="text-indigo-400 hover:underline" target="_blank" rel="noreferrer" href="https://accountscenter.instagram.com/info_and_permissions/dyi">Accounts Center → Download your information</a>.</li>
+                    <li>Choose “Some of your information”.</li>
+                    <li>Under Categories, select only “Followers and following”.</li>
+                    <li>Set format to JSON and create file.</li>
+                    <li>When it’s ready, download the ZIP and upload it here.</li>
+                  </ol>
+                </div>
+                <div>
+                  <p className="text-slate-400 text-sm mb-2">On mobile app</p>
+                  <ol className="list-decimal list-inside space-y-1 text-slate-200">
+                    <li>Profile → menu → Settings and privacy.</li>
+                    <li>Accounts Center → Your information and permissions.</li>
+                    <li>Download your information → Some of your information.</li>
+                    <li>Select only “Followers and following”, format JSON.</li>
+                    <li>Create file, wait for notification, download the ZIP.</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
           </div>
         )}
 
