@@ -137,14 +137,6 @@ const App = () => {
       const followersData = JSON.parse(followersText);
       const followingData = JSON.parse(followingText);
 
-      // Store debug data
-      setDebugData({
-        followersFile,
-        followingFile,
-        followingPreview: JSON.stringify(followingData, null, 2).slice(0, 1000),
-        followersPreview: JSON.stringify(followersData, null, 2).slice(0, 200)
-      });
-
       const followersMap = extractUsernames(followersData);
       const followingMap = extractUsernames(followingData);
 
